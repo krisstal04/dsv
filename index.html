@@ -6,28 +6,51 @@
   <title>Cristal</title>
   <style>
     body {
-      background: white;
-      text-align: center;
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fd6161, #fd7f7f); /* rojo claro suave */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
       margin: 0;
-      padding: 20px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
     h1 {
       font-size: 3rem;
-      color: black;
-      margin-bottom: 20px;
+      color: #222;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      letter-spacing: 2px;
+    }
+
+    .card {
+      padding: 12px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #000000, #ff1a1a); /* difuminado negro a rojo */
+      display: inline-block;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
     }
 
     img {
-      width: 300px; /* aquí controlas el tamaño */
+      width: 320px;
       height: auto;
+      border-radius: 15px;
+      display: block;
     }
   </style>
 </head>
 <body>
   <h1>Cristal</h1>
 
-  <img src="ferrari.png" alt="Carro de Fórmula 1">
+  <div class="card">
+    <img src="ferrari.png" alt="Carro de Fórmula 1">
+  </div>
 </body>
 </html>
